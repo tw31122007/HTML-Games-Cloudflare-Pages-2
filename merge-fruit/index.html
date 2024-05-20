@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">-->
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+    <link rel="stylesheet" href="style.css">
+
+<script>
+   function stayCalm() {
+      event.preventDefault() ;
+}
+</script>
+</head> 
+<body ontouchmove="stayCalm()"> 
+
+<!--<script>-->
+<!--if (location.protocol.substr(0, 4) === "file")-->
+<!--{-->
+<!--	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");-->
+<!--}-->
+<!--</script>-->
+
+
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+    
+
+
+<style id="loadedfully">
+body{visibility: hidden;} 
+</style>
+<style>
+#thewelcomeimage {
+  max-width: 100%;
+  height: auto;
+  max-height: 90vh;
+}
+</style>
+<div id="closediv" style="display: inline-block !important; visibility: visible;"></div>
+<script type="text/javascript">
+
+	 var loadedfully = document.getElementById("loadedfully"); loadedfully.parentNode.removeChild(loadedfully);
+
+
+setTimeout(function (){
+	var canvas = document.querySelector('canvas');
+	canvas.style.marginTop = '-23px';
+},2*1000)
+
+	 setTimeout(function (){
+		 var canvas = document.querySelector('canvas');
+		 canvas.style.marginTop = '-23px';
+	 },6*1000)
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
