@@ -4,7 +4,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="/cdn-cgi/apps/head/OgRTanTSyNlCptY7QtgVJL4dWJA.js"></script><link rel="icon" type="image/x-icon" href="/favicon.ico">
+<script>
+(function () {
+  var path = location.pathname;
+  var slash = path.lastIndexOf("/");
+  var last = path.slice(slash + 1);
+  var dir = last.indexOf(".") >= 0 ? path.slice(0, slash + 1) : (path.charAt(path.length - 1) === "/" ? path : path + "/");
+  var base = document.createElement("base");
+  base.setAttribute("href", dir);
+  document.head.insertBefore(base, document.currentScript);
+})();
+</script>
+<script src="../cdn-cgi/apps/head/OgRTanTSyNlCptY7QtgVJL4dWJA.js"></script><link rel="icon" type="image/x-icon" href="../favicon.ico">
 <title>Little Alchemy Official Hints!</title>
 <meta name="description" content="Official resource for step by step solutions in Little Alchemy Classic.">
 <link rel="canonical" href="https://littlealchemy.com/hints/">
@@ -188,8 +199,8 @@
     })(window, window.googletag, document);
   </script>
 <link href="//fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/hints/_astro/index.4ec9c1b7.css" />
-<link rel="stylesheet" href="/hints/_astro/index.6943d6a1.css" /><script type="module" src="/hints/_astro/hoisted.b2001762.js"></script></head>
+<link rel="stylesheet" href="_astro/index.4ec9c1b7.css" />
+<link rel="stylesheet" href="_astro/index.6943d6a1.css" /><script type="module" src="_astro/hoisted.b2001762.js"></script></head>
 <body class="astro-SCKKX6R4">
 <script>
   window.googletag = window.googletag || { cmd: [] };
@@ -221,8 +232,8 @@
 </div>
 </div>
 <div class="header astro-3EF6KSR2">
-<a href="/hints/" class="astro-3EF6KSR2">
-<img alt="Little Alchemy Official Hints" src="/hints/_astro/header.9f6fd7a5.png" class="astro-3EF6KSR2">
+<a href="./" class="astro-3EF6KSR2">
+<img alt="Little Alchemy Official Hints" src="_astro/header.9f6fd7a5.png" class="astro-3EF6KSR2">
 </a>
 </div>
 <div class="adHeader astro-C77XEO5Z">
@@ -271,7 +282,7 @@ Download Little&nbsp;Alchemy for iOS and Android or play it directly in the brow
 </p>
 <div class="platforms astro-73CC5BJE">
 <a class="app-store astro-73CC5BJE" href="https://apps.apple.com/app/little-alchemy/id542467126?ls=1&#38;mt=8" title="Little Alchemy - App Store" rel="noopener">
-<img alt="Download on the App Store" src="/hints/_astro/app-store-135x40.25178aee.svg" loading="lazy" class="astro-73CC5BJE">
+<img alt="Download on the App Store" src="_astro/app-store-135x40.25178aee.svg" loading="lazy" class="astro-73CC5BJE">
 </a>
 <a class="play-store astro-73CC5BJE" href="https://play.google.com/store/apps/details?id=com.sometimeswefly.littlealchemy&#38;utm_source=la-hints" title="Little Alchemy - Play Store" rel="noopener">
 <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" loading="lazy" class="astro-73CC5BJE">
@@ -294,7 +305,7 @@ Available for free here:
 </p>
 <div class="platforms astro-73CC5BJE">
 <a class="app-store astro-73CC5BJE" href="https://itunes.apple.com/app/little-alchemy-2/id1214190989" title="Little Alchemy 2 - App Store" rel="noopener">
-<img alt="Download on the App Store" src="/hints/_astro/app-store-135x40.25178aee.svg" loading="lazy" class="astro-73CC5BJE">
+<img alt="Download on the App Store" src="_astro/app-store-135x40.25178aee.svg" loading="lazy" class="astro-73CC5BJE">
 </a>
 <a class="play-store astro-73CC5BJE" href="https://play.google.com/store/apps/details?id=com.recloak.littlealchemy2&#38;utm_source=la-hints" title="Little Alchemy 2 - Play Store" rel="noopener">
 <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" loading="lazy" class="astro-73CC5BJE">
